@@ -2,7 +2,7 @@ terraform {
   required_version = ">= 1.2.0"
   required_providers {
     aws = {
-      sousource = "hashicorp/aws"
+      source = "hashicorp/aws"
       version = "4.16"
   
     }
@@ -15,6 +15,6 @@ provider "aws" {
 
 resource "aws_instance" "myfirstinstance" {
   instance_type = "t2.micro"
-  ami = "ami-0a606d8395a538502"
-  
+  ami = "ami-0b5eea76982371e91"
+
 }
